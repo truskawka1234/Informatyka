@@ -50,10 +50,10 @@ elif co== ("H"):
     P= ((a+b)*h /2 )
     print(f"P = {P}")
 elif co== ("I"):
-    a= float (input ("a="))
-    h= float (input ("h="))
-    P= (a*h)
-    print (f"P= {P}")
+    a = float (input ("a ="))
+    h = float (input ("h ="))
+    P = (a*h)
+    print (f"P = {P}")
 
 
 
