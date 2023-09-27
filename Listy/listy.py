@@ -10,6 +10,7 @@
 
 
 
+
         # stworz liste zawierajaca x liczb wprowadzonych przez użytkownika od (1 do 200)
 
 # lista = []
