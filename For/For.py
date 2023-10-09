@@ -1,4 +1,16 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
 # WYSWIETL LICZBY OD 1 DO 10
 # for x in range (11):
 #     print(x)
