@@ -64,3 +64,25 @@ count = random_list.count(random_element)
 print("Losowa tablica:", random_list)
 print(f"Losowy element: {random_element}")
 print(f"Liczba wystąpień losowego elementu: {count}")
+
+
+
+# Sprawdź ile liczb pierwszych zawiera tablica.
+tablica = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+liczby_pierwsze = []
+indeks = 0
+
+while indeks < len(tablica):
+    liczba = tablica[indeks]
+    if liczba > 1:
+        jest_pierwsza = True
+        for i in range(2, liczba):
+            if liczba % i == 0:
+                jest_pierwsza = False
+                break
+        if jest_pierwsza:
+            liczby_pierwsze.append(liczba)
+    indeks += 1
+
+print("Liczby pierwsze w tablicy:", liczby_pierwsze)
+print("Ilość liczb pierwszych:", len(liczby_pierwsze))
