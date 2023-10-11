@@ -46,6 +46,19 @@
 # for el in x:
 #     print(el)
 
+
+# oblicz sume elementow listy liczb
+
+# lista = [11,11,10]
+# my_sum = 0
+# for el in range(lista):
+#     my_sum += el
+# print (my_sum)
+
+
+
+
+
 # WYSWIETL WSZYSTKIE LICZBY OD 20 DO 30 KTORE SA PODZIELNE PRZEZ 3
 # for x in range(20,31):
 #     if x % 3 == 0:
@@ -70,3 +83,16 @@
 
    
 
+# wyswietl liczby z listy w odwrotnej kolejnosci
+# for i in range(10,2,-1):
+#     print(-i)
+
+
+#  Zamień wszystkie litery w podanym napisie na wielkie litery.
+
+
+# inp = input()
+# text = ""
+# for el in inp:
+#     text += el.upper()
+# print(text)
