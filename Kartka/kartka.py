@@ -1,5 +1,10 @@
 # Wygeneruj tablice zawierającą n losowych elementów. Z zakresem min i max. 
 
+
+
+
+
+
 import random 
 
 n = 10
@@ -23,6 +28,12 @@ print(lista)
 
 # Napisz program(nie max min) znajdujący max i min wartość. tablica zawiera 1,1,1,5,5,-2,10,1
 
+
+
+
+
+
+
 lista = [1,1,1,5,5,-2,10,1]
 
 
@@ -43,7 +54,13 @@ print("my_min =", my_min)
 
 
 
-# Napisz program który powie ile razy powtórzył się n element na tablicy. 
+
+
+
+# Napisz program który powie ile razy powtórzył się n element na tablicy.***************
+
+
+
 
 
 import random
@@ -67,7 +84,17 @@ print(f"Liczba wystąpień losowego elementu: {count}")
 
 
 
-# Sprawdź ile liczb pierwszych zawiera tablica.
+
+
+
+
+# Sprawdź ile liczb pierwszych zawiera tablica.*****************
+
+
+
+
+
+
 tablica = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 liczby_pierwsze = []
 indeks = 0
@@ -86,3 +113,62 @@ while indeks < len(tablica):
 
 print("Liczby pierwsze w tablicy:", liczby_pierwsze)
 print("Ilość liczb pierwszych:", len(liczby_pierwsze))
+
+
+
+
+
+
+
+
+# Przyjmij n liczb od użytkownika sprawdź ile z wprowadzonych liczb jest parzystych. Zapisz liczby parzyste na nowej liście. 
+#                                                           ********FOR********
+
+
+
+n = int(input("Podaj liczbę n: "))
+liczby = []
+liczby_parzyste = []
+
+for i in range(n):
+    liczba = int(input(f"Podaj liczbę {i + 1}: "))
+    liczby.append(liczba)
+
+for liczba in liczby:
+    if liczba % 2 == 0:
+        liczby_parzyste.append(liczba)
+
+print("Wprowadzone liczby:", liczby)
+print("Liczby parzyste:", liczby_parzyste)
+
+
+
+
+
+
+
+# Przyjmij n liczb od użytkownika sprawdź ile z wprowadzonych liczb jest parzystych. Zapisz liczby parzyste na nowej liścIE
+#                                                          **********WHILE**********
+
+
+
+
+
+n = int(input("Podaj liczbę n: "))
+liczby = []
+liczby_parzyste = []
+
+i = 0
+while i < n:
+    liczba = int(input(f"Podaj liczbę {i + 1}: "))
+    liczby.append(liczba)
+    i += 1
+
+i = 0
+while i < len(liczby):
+    if liczby[i] % 2 == 0:
+        liczby_parzyste.append(liczby[i])
+    i += 1
+
+print("Wprowadzone liczby:", liczby)
+print("Liczby parzyste:", liczby_parzyste)
