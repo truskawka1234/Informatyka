@@ -1,4 +1,4 @@
-# Wygeneruj tablice zawierającą n losowych elementów. Z zakresem min i max. 
+# Wygeneruj tablice zawierającą n losowych elementów. Z zakresem min i max. *****[1]*****
 
 
 
@@ -26,7 +26,7 @@ print(lista)
 
 
 
-# Napisz program(nie max min) znajdujący max i min wartość. tablica zawiera 1,1,1,5,5,-2,10,1
+# Napisz program(nie max min) znajdujący max i min wartość. tablica zawiera 1,1,1,5,5,-2,10,1 ******[2]******
 
 
 
@@ -57,7 +57,7 @@ print("my_min =", my_min)
 
 
 
-# Napisz program który powie ile razy powtórzył się n element na tablicy.***************
+# Napisz program który powie ile razy powtórzył się n element na tablicy.*****[3]******
 
 
 
@@ -88,7 +88,7 @@ print(f"Liczba wystąpień losowego elementu: {count}")
 
 
 
-# Sprawdź ile liczb pierwszych zawiera tablica.*****************
+# Sprawdź ile liczb pierwszych zawiera tablica.******[4]******
 
 
 
@@ -121,7 +121,41 @@ print("Ilość liczb pierwszych:", len(liczby_pierwsze))
 
 
 
-# Przyjmij n liczb od użytkownika sprawdź ile z wprowadzonych liczb jest parzystych. Zapisz liczby parzyste na nowej liście. 
+
+# Przepisz wszystkie elementy mniejsze od n do 2 tablicy wyświetl tą tablice *******[5]*******
+n = int(input("n = "))
+tablica1 = [1,2,3,4,7,15,9,24,30]  
+
+tablica2 = []
+
+
+for element in tablica1:
+    if element < n:
+        tablica2.append(element)
+
+
+print("Nowa tablica zawierająca elementy mniejsze od", n, "to:", tablica2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Przyjmij n liczb od użytkownika sprawdź ile z wprowadzonych liczb jest parzystych. Zapisz liczby parzyste na nowej liście. *****[6]*******
 #                                                           ********FOR********
 
 
