@@ -129,9 +129,9 @@ tablica1 = [1,2,3,4,7,15,9,24,30]
 tablica2 = []
 
 
-for element in tablica1:
-    if element < n:
-        tablica2.append(element)
+for el in tablica1:
+    if el < n:
+        tablica2.append(el)
 
 
 print("Nowa tablica zawierająca elementy mniejsze od", n, "to:", tablica2)
