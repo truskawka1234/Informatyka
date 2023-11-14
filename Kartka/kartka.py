@@ -206,3 +206,7 @@ while i < len(liczby):
 
 print("Wprowadzone liczby:", liczby)
 print("Liczby parzyste:", liczby_parzyste)
+
+
+
+
