@@ -28,7 +28,6 @@ class kolory:
     pogrubienie = "\033[1m"
     podkreslenie = "\033[4m"
 
-
 # wprowadzanie danych i zmiennych
 def gra_ekstremalna(imie, slowo, zycia):
     koniec_gry = False 
