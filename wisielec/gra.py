@@ -31,7 +31,8 @@ def gra_ekstremalna(imie, slowo, zycia):
     koniec_gry = False 
     haslo = []
     uzyte = []
-    
+    miejsce_litery = 0
+    zycia_domyslnie = zycia
     
 
 
@@ -61,21 +62,22 @@ def gra_ekstremalna(imie, slowo, zycia):
     
     
 # sprawdzam czy litera nalezy do danego slowa
-        if litera in slowo:
-            for i in range(len(slowo)):
-                if slowo[i] == litera:
-                    haslo[i] = litera
-                    if '_' not in haslo:
-                        print(f'\n{kolory.tlo_zielony}Brawo {kolory.pogrubienie}{imie} ukończyłes grę {kolory.reset}\n{kolory.podkreslenie}pozostało ci {zycia} żyć{kolory.reset}')
-                        print(f'\nPodczas całej rozgrywki użyłeś takie litery {uzyte}')
-                        print()
-                        exit()
+        if slowo[miejsce_litery] == litera:
+            haslo[miejsce_litery] = litera
+            miejsce_litery = miejsce_litery+1
+            uzyte.clear()
+            zycia = zycia_domyslnie
+            if '_' not in haslo:
+                print(f'\n{kolory.tlo_zielony}Brawo {kolory.pogrubienie}{imie} ukończyłes grę {kolory.reset}\n{kolory.podkreslenie}pozostało ci {zycia} żyć{kolory.reset}')
+                print(f'\nPodczas całej rozgrywki użyłeś takie litery {uzyte}')
+                print()
+                exit()
                         
                     
         else:
             if litera not in uzyte:
                 uzyte.append(litera)
-            print("  NIE MA TAKIEJ LITERY W TYM SŁOWIE" )
+            print("  NIE MA TAKIEJ LITERY NA TEJ POZYCJI" )
             
             zycia -= 1
             if zycia < 1:
@@ -85,14 +87,14 @@ def gra_ekstremalna(imie, slowo, zycia):
             print(f'{haslo[i]}', end ='')
         print()
     
-    
-        print(f'\n niepasujące litery = {len(uzyte)} : ', end='')
+        print(f'\n Próbujesz odgadnąć literę z pozycji nr = {miejsce_litery+1}')
+        print(f'\n niepasujące litery na tej pozycji = {len(uzyte)} : ', end='')
         for i in range(len(uzyte)):
             print(f'{uzyte[i]},', end='')
     
     
         print('\n pozostałe próby = ', zycia)
-
+    print(f'{kolory.tlo_czerwony}Koniec gry{kolory.pogrubienie} {imie} przegrałeś!{kolory.reset} {kolory.podkreslenie}\nPozostało ci {zycia} żyć\n{kolory.reset}{slowo}')
 
 
 
@@ -159,7 +161,7 @@ def gra(imie, slowo, zycia):
     
 
         print('\n pozostałe próby = ', zycia)
-
+    print(f'{kolory.tlo_czerwony}Koniec gry{kolory.pogrubienie} {imie} przegrałeś!{kolory.reset} {kolory.podkreslenie}\nPozostało ci {zycia} żyć\n{kolory.reset}{slowo}')
 
 
 
@@ -200,7 +202,7 @@ for i in range(10):
         print(czy_poziom_ekstremalny)
         if czy_poziom_ekstremalny == "t":
             slowo = str(losuj_slowo_ekstremalne())
-            gra_ekstremalna(imie, slowo, zycia=4)
+            gra_ekstremalna(imie, slowo, zycia=10)
         elif czy_poziom_ekstremalny == "n":
             break
         else: 
@@ -215,7 +217,7 @@ for i in range(10):
 
 #gra(zycia)
 #os.system('cls' if os.name == 'nt' else 'clear')
-print(f'{kolory.tlo_czerwony}Koniec gry{kolory.pogrubienie} {imie} przegrałeś!{kolory.reset} {kolory.podkreslenie}\nPozostało ci {zycia} żyć\n{kolory.reset}{slowo}')
+#print(f'{kolory.tlo_czerwony}Koniec gry{kolory.pogrubienie} {imie} przegrałeś!{kolory.reset} {kolory.podkreslenie}\nPozostało ci {zycia} żyć\n{kolory.reset}{slowo}')
 
 
 
