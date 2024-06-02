@@ -1,4 +1,4 @@
-from klasa_portfel import Portfel
+from klasaPortfel import Portfel
 class Osoba:
     def __init__(self, pieniadze):
         self.pieniadze = pieniadze
