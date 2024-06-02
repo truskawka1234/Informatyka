@@ -6,7 +6,7 @@ class Portfel:
     def kup(self, kwota, waluta):
         kupiona_ilosc = kwota / waluta.wartosc
         self.iloscAktywa += kupiona_ilosc
-        print(f'Kupiono {kupiona_ilosc:.4f} {waluta.nazwa} za {kwota} PLN.')
+        print(f'Kupiono {kupiona_ilosc:.10f} {waluta.nazwa} za {kwota} PLN.')
 
     def sprzedaj(self, ilosc, waluta):
         if ilosc > self.iloscAktywa:
@@ -15,5 +15,5 @@ class Portfel:
         else:
             uzyskana_kwota = ilosc * waluta.wartosc
             self.iloscAktywa -= ilosc
-            print(f'Sprzedano {ilosc:.4f} {waluta.nazwa} za {uzyskana_kwota} PLN.')
+            print(f'Sprzedano {ilosc:.10f} {waluta.nazwa} za {uzyskana_kwota} PLN.')
             return uzyskana_kwota

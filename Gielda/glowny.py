@@ -6,11 +6,11 @@ import time
 
 
 def get_crypto_prices():
-    response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,litecoin&vs_currencies=usd')
+    response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,litecoin&vs_currencies=pln')
     data = response.json()
-    btc_price = data['bitcoin']['usd']
-    eth_price = data['ethereum']['usd']
-    ltc_price = data['litecoin']['usd']
+    btc_price = data['bitcoin']['pln']
+    eth_price = data['ethereum']['pln']
+    ltc_price = data['litecoin']['pln']
     return btc_price, eth_price, ltc_price
 
 def aktualizuj_ceny_walut():
@@ -28,9 +28,9 @@ def program():
         aktualizuj_ceny_walut()  # Aktualizacja cem walut 
         print(f'\nWitaj! Masz {osoba1.pieniadze} PLN.')
         print('Dostępne waluty:')
-        print(f'1. BTC - {BTC.wartosc} USD za 1 BTC')
-        print(f'2. ETH - {ETH.wartosc} USD za 1 ETH')
-        print(f'2. LTC - {LTC.wartosc} USD za 1 LTC')
+        print(f'1. BTC - {BTC.wartosc} PLN za 1 BTC')
+        print(f'2. ETH - {ETH.wartosc} PLN za 1 ETH')
+        print(f'2. LTC - {LTC.wartosc} PLN za 1 LTC')
 
         waluty = {"BTC": BTC, "ETH": ETH, "LTC":LTC}
         
@@ -39,19 +39,21 @@ def program():
             wybor_waluty = input('Którą walutę chcesz wybrać? (BTC/ETH/LTC): ').upper()
             if wybor_waluty in waluty:
                 wybrana_waluta = waluty[wybor_waluty]
-                print(f'Aktualna wartość {wybor_waluty} to {wybrana_waluta.wartosc} USD')
+                print(f'Aktualna wartość {wybor_waluty} to {wybrana_waluta.wartosc} PLN')
+               
                 break
+
             if time.time() - start_time > 20:
                 print('Aktualizacja cen walut:')
                 aktualizuj_ceny_walut()
-                print(f'BTC - {BTC.wartosc} USD za 1 BTC')
-                print(f'ETH - {ETH.wartosc} USD za 1 ETH')
+                print(f'BTC - {BTC.wartosc} PLN za 1 BTC')
+                print(f'ETH - {ETH.wartosc} PLN za 1 ETH')
                 start_time = time.time()
             else:
                 print('Nieznana waluta.')
 
         while True:
-            akcja = input('Chcesz kupić czy sprzedać? (kup/sprzedaj): ').lower()
+            akcja = input('Co chcesz zrobić? (kup/sprzedaj/pokaz portfel): ').lower()
             if akcja == 'kup':
                 kwota = float(input('Podaj kwotę w PLN, za którą chcesz kupić walutę: '))
                 if kwota > osoba1.pieniadze:
@@ -63,6 +65,14 @@ def program():
                 ilosc = float(input(f'Podaj ilość {wybor_waluty}, którą chcesz sprzedać: '))
                 osoba1.sprzedaj_walute(wybor_waluty, ilosc, wybrana_waluta)
                 break
+            elif akcja == 'pokaz portfel':
+                print(f'twoj stan konta obecnie wynosi {osoba1.pieniadze}zł')
+                if not osoba1.listaPortfeli:
+                    print('nie masz obecnie jeszcze zadnego portfela krypto')
+                else:
+                    for portfel in osoba1.listaPortfeli:
+                     print(f'{portfel.nazwa}: {portfel.iloscAktywa:.10f} jednostek')
+                break
             else:
                 print('Nieznana akcja.')
         
@@ -72,6 +82,6 @@ def program():
     
     print(f'Kończymy na dziś. Masz {osoba1.pieniadze} PLN.')
     for portfel in osoba1.listaPortfeli:
-        print(f'{portfel.nazwa}: {portfel.iloscAktywa:.4f} jednostek')
+        print(f'{portfel.nazwa}: {portfel.iloscAktywa:.10f} jednostek')
 
 program()
