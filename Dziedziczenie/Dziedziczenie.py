@@ -1,4 +1,4 @@
-class kolory:
+ class kolory:
     reset = "\033[0m"
     czerwony = "\033[31m"
     zolty = "\033[33m"

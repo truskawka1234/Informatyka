@@ -1,0 +1,26 @@
+.napoj1 {
+  border-bottom: 0.3em solid $color2;
+  border-left: 0.7em solid $color2;
+  &__content {
+    width: 100vw;
+    height: auto;
+    @include center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 50px;
+    &--image {
+      width: 500px;
+      img {
+        width: 100%;
+      }
+    }
+    &--text {
+      width: 500px;
+      padding: 2em;
+      h1 {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
