@@ -1,5 +1,58 @@
-footer {
+.header {
   width: 100vw;
-  height: 15vh;
-  background-color: $color2;
+  background-color: rgb(1, 255, 213);
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color2;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color2;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(253, 0, 190);
+    }
+  }
+}
+.header2 {
+  width: 100vw;
+  background-color: rgb(110, 110, 110);
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color2;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color2;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgb(253, 0, 190);
+    }
+  }
 }
