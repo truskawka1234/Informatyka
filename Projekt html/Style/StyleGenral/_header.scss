@@ -1,0 +1,149 @@
+.header {
+  width: 100vw;
+  background-color: $color2;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color2;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color2;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+}
+
+.header1 {
+  width: 100vw;
+  background-color: $color5;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color5;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color5;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+}
+
+.header2 {
+  width: 100vw;
+  background-color: $color7;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color7;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color7;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+}
+
+.header3 {
+  width: 100vw;
+  background-color: $color8;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color8;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color8;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+}
+
+.header4 {
+  width: 100vw;
+  background-color: $color9;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0px;
+  &__menu {
+    margin-right: 2em;
+    width: 20vw;
+    height: 10vh;
+    border: 0.7em solid $color9;
+    background-color: $color1;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+    div {
+      width: 100%;
+      height: 0.8vh;
+      background-color: $color9;
+    }
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darkblue;
+    }
+  }
+}
