@@ -1,0 +1,12 @@
+.tlo {
+  display: flex;
+  gap: 20px;
+
+  &__zielony {
+    background-color: rgb(0, 255, 0);
+    width: 150px;
+    height: 300px;
+    margin-left: 90px;
+    margin: 20px;
+  }
+}

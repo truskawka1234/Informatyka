@@ -1,0 +1,18 @@
+.flag {
+  display: flex;
+  gap: 200px;
+
+  &__zielony {
+    background-color: rgb(0, 255, 0);
+    width: 200px;
+    height: 250px;
+    margin-top: 90px;
+  }
+
+  &__zielon {
+    background-color: rgb(0, 255, 0);
+    width: 90px;
+    height: 100px;
+    margin-top: 170px;
+  }
+}

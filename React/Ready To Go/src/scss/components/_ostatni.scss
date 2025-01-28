@@ -1,0 +1,11 @@
+.ostatni {
+  display: flex;
+  gap: 10px;
+
+  &__ziel {
+    background-color: rgb(0, 255, 0);
+    width: 1400px;
+    height: 120px;
+    margin: 10px;
+  }
+}
