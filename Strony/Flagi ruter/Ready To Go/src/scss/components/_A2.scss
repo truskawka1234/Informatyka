@@ -1,0 +1,14 @@
+.ukraina {
+  width: 200px;
+  height: 200px;
+  &__blue {
+    background-color: blue;
+    width: 100%;
+    height: 50%;
+  }
+  &__yellow {
+    background-color: yellow;
+    width: 100%;
+    height: 50%;
+  }
+}

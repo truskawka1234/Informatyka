@@ -1,0 +1,20 @@
+.belgia {
+  width: 300px;
+  height: 200px;
+
+  &__yellow {
+    background-color: yellow;
+    width: 65%;
+    height: 100%;
+  }
+  &__red {
+    background-color: rgb(255, 0, 0);
+    width: 50%;
+    height: 100%;
+  }
+  &__black {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.rosja {
+  width: 200px;
+  height: 200px;
+
+  &__white {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 50%;
+  }
+  &__blue {
+    background-color: rgb(4, 0, 255);
+    width: 100%;
+    height: 65%;
+  }
+
+  &__red {
+    background-color: rgb(250, 0, 0);
+    width: 100%;
+    height: 50%;
+  }
+}

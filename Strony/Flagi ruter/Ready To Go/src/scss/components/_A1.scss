@@ -1,0 +1,15 @@
+.polska {
+  width: 200px;
+  height: 200px;
+
+  &__white {
+    background-color: rgb(255, 0, 0);
+    height: 50%;
+    width: 100%;
+  }
+  &__red {
+    background-color: rgb(241, 241, 241);
+    height: 50%;
+    width: 100%;
+  }
+}
