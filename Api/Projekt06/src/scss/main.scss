@@ -1,0 +1,24 @@
+@import "./reset";
+@import "./star";
+@import "./variables";
+@import "./mixins";
+@import "./body";
+
+// ----------------------------------
+@import "./components/header";
+@import "./components/footer";
+@import "components/gallery";
+@import "components/menu";
+
+@import "./components/drinks";
+@import "./components/home";
+@import "./components/quiz";
+@import "./components/favorites";
+@import "./components/recipe";
+
+@media (max-width: 600px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

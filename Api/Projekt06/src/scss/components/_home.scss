@@ -1,0 +1,31 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+
+  &__title {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+
+  &__description {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #34495e;
+  }
+
+  &__image-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+}

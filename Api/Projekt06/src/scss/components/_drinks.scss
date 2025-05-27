@@ -1,0 +1,75 @@
+.breeds {
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $color-primary;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__load-more {
+    display: block;
+    margin: 2rem auto 1rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: $color-primary;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}
+
+.breed-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.15);
+  }
+
+  &__image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__name {
+    margin: 0.75rem 0 0.5rem;
+    font-size: 1.3rem;
+    color: $color-primary;
+    text-transform: capitalize;
+  }
+
+  &__specs {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0 1rem 1rem;
+
+    p {
+      margin: 0.3rem 0;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.favorites {
+  padding: 2rem;
+  background-color: #ffffff7a;
+  min-height: 100vh;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  &__item {
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    h3 {
+      margin: 0.75rem;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #444;
+    }
+  }
+
+  &__empty {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #888;
+    margin-top: 2rem;
+    font-style: italic;
+  }
+}
+
+.favorite-button {
+  margin-top: 1rem;
+  text-align: center;
+
+  button {
+    background: #ffb347;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+    &.remove {
+      background: #ff6b6b;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .message {
+    display: block;
+    margin-top: 0.5rem;
+    color: #444;
+    font-size: 0.9rem;
+    animation: fadein 0.5s ease;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
