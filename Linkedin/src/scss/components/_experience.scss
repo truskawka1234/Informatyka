@@ -1,0 +1,78 @@
+.experience {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background-color: $color-bg;
+  color: $text-light;
+  text-align: center;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: $text-white;
+  }
+
+  &__box {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    background: #313131a9;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: $text-green;
+    }
+  }
+
+  &__projects {
+    margin-top: 3rem;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: $text-white;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: $text-white;
+    }
+
+    .experience__github {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: $text-white;
+      text-decoration: none;
+      border: 2px solid $text-green;
+      padding: 0.5rem 1.5rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $color-primary;
+        color: $text-white;
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+
+// .experience {
+//   padding: 2rem;
+//   background-color: ($color-bg);
+
+//   h2 {
+//     font-size: 2rem;
+//     margin-bottom: 1rem;
+//   }
+// }

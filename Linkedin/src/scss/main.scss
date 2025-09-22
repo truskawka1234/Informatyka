@@ -1,0 +1,21 @@
+@import "./reset";
+@import "./star";
+@import "./variables";
+@import "./mixins";
+@import "./body";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/menu";
+
+@import "./components/home";
+@import "./components/hobby";
+@import "./components/experience";
+@import "./components/kontakt";
+
+@media (max-width: 600px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -151,7 +151,7 @@ body {
   cursor: not-allowed;
 }
 .gallery__load-more:hover:not(:disabled) {
-  background-color: #3f0020;
+  background-color: rgb(63, 0, 31.5);
 }
 
 .menu {
@@ -205,7 +205,7 @@ body {
   cursor: not-allowed;
 }
 .breeds__load-more:hover:not(:disabled) {
-  background-color: #3f0020;
+  background-color: rgb(63, 0, 31.5);
 }
 
 .breed-card {

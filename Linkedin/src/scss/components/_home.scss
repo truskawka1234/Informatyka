@@ -1,0 +1,25 @@
+.home {
+  position: relative;
+  height: 100vh; // cała wysokość okna
+  width: 100vw; // pełna szerokość
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/020/948/629/non_2x/purple-wave-lines-on-black-background-fluid-abstract-background-suitable-for-landng-page-and-computer-desktop-wallpaper-vector.jpg"); // link do zdjęcia
+  background-size: cover; // całe tło
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+
+  h2 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
